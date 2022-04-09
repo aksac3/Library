@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6586459cdc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>My Library</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-8">
+      <i class="fa-solid fa-scroll text-primary"></i> 
+      Book<span class="text-primary">Atlas</span></h1>
+      <form id="book-form">
+        <div class="form-group mt-5">
+          <label for="title">Title</label>
+          <input type="text" id="title" 
+          class="form-control">
+        </div>
+        <div class="form-group mt-4">
+          <label for="author">Author</label>
+          <input type="text" id="author" 
+          class="form-control">
+        </div>
+        <div class="form-group mt-4">
+          <label for="pages">Pages</label>
+          <input type="text" id="pages" 
+          class="form-control">
+        </div>
+        <div class="form-group mt-4">
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" 
+          class="form-control">
+        </div>
+      
+        <div class="status">
+        <label for="isRead">Read Status</label>
+        <input name='formRead' id='formIsRead' class="form-check-input" type='radio' value="Read" required>Read
+        <input name='formRead' id='formNotRead' class="form-check-input" type='radio' value="Not Read">Not Read 
+        </div>
+        <input type="submit" value="Add your Book" 
+        class="button">
+      </form>
+      <table class="table table-active mt-4">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read Status</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+  </div>
+</body>
+</html>
